@@ -1,15 +1,18 @@
 /*
 
 font-family: 'Arapey', serif;
+
+Open Sans 
+font-family: 'Open Sans', sans-serif;
 */
 
 
-p {
+h1,
+h2 {
 
     font-family: 'Arapey', serif;
     letter-spacing: 2px;
-    font-size: 16px;
-    color: #1c1313
+    
 }
 
 a {
@@ -33,26 +36,33 @@ body {
     margin-left: 5%;
     position: relative;
     z-index: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #1c1313
 }
 
 
 body::after {
-    
+
     background-image: url(../img/hanson-lu-423362-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
     opacity: 0.4;
     position: absolute;
-    top: -7%; 
+    top: -7%;
     bottom: -7%;
-    right: -7%;;
-    left: -7%;;
+    right: -7%;
+    ;
+    left: -7%;
+    ;
     z-index: -1;
 
 
 
 }
+
+/*body after because the background image is on the body, 
+so you couldn't use opacity without blurring everything else out'*/
 
 .quote {
     width: 50%;
@@ -61,5 +71,48 @@ body::after {
     background-color: lightgray;
     padding: 80px 30px 80px 30px;
     border-left: 3px dashed;
-    font-style: italic; 
+    font-style: italic;
+}
+
+
+.neighbors {
+    border-left: 4px solid #e293c9;
+}
+
+.farmer {
+    border-left: 4px solid #86ff76;
+
+}
+
+
+li:nth-child(2) {
+    background-color: yellow;
+}
+
+
+.good {
+    color: green;
+}
+
+.bad {
+    color: red;
+}
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.floatleft {
+    float: left;
+    margin: 40px;
+}
+
+
+#notif {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background-color: antiquewhite;
+    opacity: 0.9;
 }
