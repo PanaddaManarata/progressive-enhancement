@@ -3,32 +3,63 @@
 font-family: 'Arapey', serif;
 */
 
-p{
-    
+
+p {
+
     font-family: 'Arapey', serif;
-    letter-spacing: 2px; 
-    font-size: 16px; 
+    letter-spacing: 2px;
+    font-size: 16px;
     color: #1c1313
-    
 }
-a{
-    
+
+a {
+
     color: #dd9d28;
-    text-decoration: none;   
+    text-decoration: none;
 }
 
-a:hover{
-    color:#ce8601;
+a:hover {
+    color: #ce8601;
 }
 
-a:visited{
+a:visited {
+
+    color: #836328;
+}
+
+
+body {
+    max-width: 90%;
+    margin-left: 5%;
+    position: relative;
+    z-index: 0;
+}
+
+
+body::after {
     
-color: #836328;
+    background-image: url(../img/hanson-lu-423362-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    top: -7%; 
+    bottom: -7%;
+    right: -7%;;
+    left: -7%;;
+    z-index: -1;
+
+
+
 }
 
-
-body{
-    max-width: 90%; 
-    margin-left: 5%; 
-    
+.quote {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 160%;
+    background-color: lightgray;
+    padding: 80px 30px 80px 30px;
+    border-left: 3px dashed;
+    font-style: italic; 
 }
